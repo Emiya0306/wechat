@@ -67,6 +67,7 @@ app.use(express.query());
 app.use('/', wechat(config, function (req, res, next) {
   // 微信输入信息都在req.weixin上
   var message = req.weixin;
+  console.log(123);
   if (message.FromUserName === 'diaosi') {
     // 回复屌丝(普通回复)
     res.reply('hehe');
