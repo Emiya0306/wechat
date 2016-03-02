@@ -1,4 +1,5 @@
 var express = require('express');
+var wechat = require('wechat');
 var router = express.Router();
 
 var config = {
